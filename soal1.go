@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// Fungsi menghitung rata-rata
 func calculateAvg(numbers ...int) float64 {
 	result := 0
 	for _, number := range numbers {
@@ -21,6 +22,7 @@ func main() {
 	koalaBonus2 := calculateAvg(109, 95, 106)
 	minimumScore := 100
 
+	// Pengondisian untuk menentukan hasil yang tepat
 	if dolphin1 < koala1 {
 		fmt.Printf("Pemenangnya Koala: %.2f \n", koala1)
 	} else if dolphin1 > koala1 {
